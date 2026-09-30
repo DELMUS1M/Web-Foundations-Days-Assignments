@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 5: User Directory</title>
+  <script src="users.js" defer></script>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+    .form-group { margin: 15px 0; }
+    .user-card { border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
+    .user-card h3 { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <h1>User Directory</h1>
+  
+  <button id="load-users">Load Users</button>
+
+  <div class="form-group">
+    <label for="filter-input">Filter by Name:</label>
+    <input type="text" id="filter-input" placeholder="Start typing a name...">
+  </div>
+
+  <p id="status"></p>
+
+  <ul id="users-list" style="list-style-type: none; padding: 0;"></ul>
+</body>
+</html>
